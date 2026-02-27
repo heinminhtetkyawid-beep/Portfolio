@@ -1,0 +1,185 @@
+:root {
+    --link-colour: #4a76ee;
+    --bg: #ffffff;
+    --primary-text: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .name a {
+    color: var(--primary-text);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .socials a:first-child {
+    margin-right: 20px;
+    color:#000000;
+}
+
+nav .socials a:nth-child(2) {
+    color:#7e205f;
+    margin-right:20px ;
+}
+
+nav .socials a:last-child {
+    color:#1da1f2;
+}
+
+/*Welcome Section*/
+.welcome {
+    text-align: center;
+    padding: 50px;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+#hello {
+    font-size: 50px;
+}
+
+
+/*Main Section*/
+
+#main-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 50px 0;
+    gap: 40px;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#main-section .about-me {
+    flex: 3;
+}
+#main-section .portrait {
+    flex: 2;
+}
+
+.portrait img {
+    width: 500px;
+    border-radius: 50%;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+/*Links to co webs*/
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+#links .brief {
+    font-size: 40px;
+    text-decoration: double-underline;
+    color: var(--primary-text);
+    align-items: center;
+}
+
+#links .links-container {
+    display: flex;
+    gap: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/*Border for link*/
+#links .links-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid var(--link-colour);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#links .links-container a:hover {
+    background-color: var(--link-colour);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/*Social Media Accounts*/
+
+#accounts .accounts-container {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.accounts-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid var(--link-colour);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    
+}
+
+.accounts-container {
+    justify-content: center;
+    margin-top: 12px;
+}
+}
+
+.accounts-container a:hover {
+    background-color: var(--link-colour);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+#accounts .accounts-container a:first-child {
+    color:#000000;
+
+}
+
+#accounts .accounts-container a:nth-child(2) {
+    color:#7e205f;
+}
+
+#accounts .accounts-container a:nth-child(3) {
+    color:#1da1f2;
+
+}
+
+#accounts .accounts-container a:last-child {
+    color: #c4c410
+}
